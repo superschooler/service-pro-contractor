@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+<div class="main-nav" id="main-navigation">
+  <a href="index.html" class="active"><img class="main-nav-logo" src="images/logo/Logo.svg" alt="Logo" /></a>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="staff.html">Our Staff</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="plumbingservices.html">Plumbing Services</a>
+      <a href="draincleaning.html">Drain Cleaning</a>
+      <a href="sewerrepair.html">Sewer Repair</a>
+      <a href="waterheaters.html">Water Heaters</a>
+      <a href="cameraservice.html">Camera Service</a>
+      <a href="leakdetection.html">Leak Detection</a>
+    </div>
+  </div>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("main-navigation");
+  if (x.className === "main-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "main-nav";
+  }
+}
+</script>
+
+</body>
+</html>
